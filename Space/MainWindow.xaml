@@ -1,0 +1,37 @@
+﻿<Window x:Class="Space.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Space"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="350">
+    <Grid>
+        
+
+        <Grid.RowDefinitions>
+        <RowDefinition Height="70*"/>
+        <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="2" Source="/Resources/splashScreen.png" Width="350" Height="750" />
+        <StackPanel Grid.Row="1" Margin="10">
+            <Button x:Name="AutorizeBtn" Content="Войти в аккаунт" Background="Black" Foreground="White"   HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="40" FontSize="22" Click="AutorizeBtn_Click" Panel.ZIndex="-2">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="RegBtn" Content="Зарегистрироваться" Background="Black" Foreground="White"   HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="40" FontSize="22" Click="RegBtn_Click" Margin="10">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+        
+
+
+    </Grid>
+</Window>
